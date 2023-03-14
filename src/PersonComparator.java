@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Set;
 
 
-public class ComparP implements Comparator<Person> {
+public class PersonComparator implements Comparator<Person> {
     private int maxWords;
 
     @Override
@@ -17,7 +17,7 @@ public class ComparP implements Comparator<Person> {
         return o1.getAge() - o2.getAge();
     }
 
-    public ComparP(int maxWords) {
+    public PersonComparator(int maxWords) {
         this.maxWords = maxWords;
     }
 }

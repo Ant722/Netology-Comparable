@@ -10,7 +10,7 @@ public class Main {
         List<Person> people = new ArrayList<>();
         peoplAdd(people);
         System.out.println(people);
-        Collections.sort(people, new ComparP(4).reversed());
+        Collections.sort(people, new PersonComparator(4).reversed());
         System.out.println(people);
         people.removeIf(person -> person.getAge()<18);
         System.out.println(people);
